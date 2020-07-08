@@ -131,6 +131,10 @@
     "filename": "iowa-electricity.csv",
     "format": "csv"
   },
+  "iris": {
+    "filename": "iris.json",
+    "format": "json"
+  },
   "jobs": {
     "filename": "jobs.json",
     "format": "json"
@@ -203,8 +207,16 @@
     "filename": "population_engineers_hurricanes.csv",
     "format": "csv"
   },
+  "seattle-temps": {
+    "filename": "seattle-temps.csv",
+    "format": "csv"
+  },
   "seattle-weather": {
     "filename": "seattle-weather.csv",
+    "format": "csv"
+  },
+  "sf-temps": {
+    "filename": "sf-temps.csv",
     "format": "csv"
   },
   "seattle-weather-hourly-normals": {
