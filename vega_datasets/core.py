@@ -5,6 +5,7 @@ import pkgutil
 import textwrap
 from typing import Any, Dict, Iterable, List
 from urllib.request import urlopen
+import warnings
 
 import pandas as pd
 
@@ -108,6 +109,8 @@ class Dataset(object):
 
     def __init__(self, name: str):
         info = self._infodict(name)
+        if name in ["iris", "sf-temps", "seattle-temps"]:
+            warnings.warn(f"{name} dataset is deprecated.")
         self.name = name
         self.methodname = name.replace("-", "_")
         self.filename = info["filename"]
